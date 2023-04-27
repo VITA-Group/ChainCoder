@@ -13,7 +13,7 @@ The Syntax aware transformer is built on a unique set of vocabularies.
 
 This means whenever one needs to train/evaluate on a new dataset, one needs to first do a "sweep" for this dataset to collect all necessary syntax and content patterns. 
 
-We have provided the vocabulary generated while sweeping across the APPS and code contest datasets. The code in these two datasets read from and output to the standard input/output, which has the format of
+<!-- We have provided the vocabulary generated while sweeping across the APPS and code contest datasets. The code in these two datasets read from and output to the standard input/output, which has the format of
 
 ```
 x = input()
@@ -28,7 +28,7 @@ If you have a new dataset that take the form of
     # ...
     return y
 ```
-or other forms of the coding style significantly different, then you will need to run the vocabulary collection stage again. Otherwise, feel safe to use the vocabulary from STTD (APPS + code contest).
+or other forms of the coding style significantly different, then you will need to run the vocabulary collection stage again. Otherwise, feel safe to use the vocabulary from STTD (APPS + code contest). -->
 
 
 
