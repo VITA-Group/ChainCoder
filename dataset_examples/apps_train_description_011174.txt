@@ -1,0 +1,11 @@
+Bessie has way too many friends because she is everyone's favorite cow! Her new friend Rabbit is trying to hop over so they can play! 
+
+More specifically, he wants to get from $(0,0)$ to $(x,0)$ by making multiple hops. He is only willing to hop from one point to another point on the 2D plane if the Euclidean distance between the endpoints of a hop is one of its $n$ favorite numbers: $a_1, a_2, \ldots, a_n$. What is the minimum number of hops Rabbit needs to get from $(0,0)$ to $(x,0)$? Rabbit may land on points with non-integer coordinates. It can be proved that Rabbit can always reach his destination.
+
+Recall that the Euclidean distance between points $(x_i, y_i)$ and $(x_j, y_j)$ is $\sqrt{(x_i-x_j)^2+(y_i-y_j)^2}$.
+
+For example, if Rabbit has favorite numbers $1$ and $3$ he could hop from $(0,0)$ to $(4,0)$ in two hops as shown below. Note that there also exists other valid ways to hop to $(4,0)$ in $2$ hops (e.g. $(0,0)$ $\rightarrow$ $(2,-\sqrt{5})$ $\rightarrow$ $(4,0)$).
+
+ $1$ Here is a graphic for the first example. Both hops have distance $3$, one of Rabbit's favorite numbers. 
+
+In other words, each time Rabbit chooses some number $a_i$ and hops with distance equal to $a_i$ in any direction he wants. The same number can be used multiple times.

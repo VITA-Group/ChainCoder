@@ -1,0 +1,175 @@
+
+
+________________________________
+demo code:
+
+# Leetcode problem 7. Reverse Integer: 
+# https://leetcode.com/problems/reverse-integer/description/
+class Solution(object):
+    def reverse(self, x):
+        reverse = 0
+        sign = -1 if x < 0 else 1
+        x = abs(x)
+        while x:
+            digit = x % 10
+            reverse = reverse * 10 + digit
+            x /= 10
+        result = sign * reverse
+        if result > 2 ** 31 - 1 or result < -(2 ** 31):
+            return 0
+        return result
+
+
+
+________________________________
+syntax_token_S3:
+Module(body=[ClassDef(name=
+,bases=[Name(id=
+,ctx=Load())],keywords=[],body=[FunctionDef(name=
+,args=arguments(posonlyargs=[],args=[arg(arg=
+,annotation=None,type_comment=None),arg(arg=
+,annotation=None,type_comment=None)],vararg=None,kwonlyargs=[],kw_defaults=[],kwarg=None,defaults=[]),body=[Assign(targets=[Name(id=
+,ctx=Store())],value=Constant(value=
+,kind=None),type_comment=None),Assign(targets=[Name(id=
+,ctx=Store())],value=IfExp(test=Compare(left=Name(id=
+,ctx=Load()),ops=[
+],comparators=[Constant(value=
+,kind=None)]),body=UnaryOp(op=
+,operand=Constant(value=
+,kind=None)),orelse=Constant(value=
+,kind=None)),type_comment=None),Assign(targets=[Name(id=
+,ctx=Store())],value=Call(func=Name(id=
+,ctx=Load()),args=[Name(id=
+,ctx=Load())],keywords=[]),type_comment=None),While(test=Name(id=
+,ctx=Load()),body=[Assign(targets=[Name(id=
+,ctx=Store())],value=BinOp(left=Name(id=
+,ctx=Load()),op=
+,right=Constant(value=
+,kind=None)),type_comment=None),Assign(targets=[Name(id=
+,ctx=Store())],value=BinOp(left=BinOp(left=Name(id=
+,ctx=Load()),op=
+,right=Constant(value=
+,kind=None)),op=
+,right=Name(id=
+,ctx=Load())),type_comment=None),AugAssign(target=Name(id=
+,ctx=Store()),op=
+,value=Constant(value=
+,kind=None))],orelse=[]),Assign(targets=[Name(id=
+,ctx=Store())],value=BinOp(left=Name(id=
+,ctx=Load()),op=
+,right=Name(id=
+,ctx=Load())),type_comment=None),If(test=BoolOp(op=
+,values=[Compare(left=Name(id=
+,ctx=Load()),ops=[
+],comparators=[BinOp(left=BinOp(left=Constant(value=
+,kind=None),op=
+,right=Constant(value=
+,kind=None)),op=
+,right=Constant(value=
+,kind=None))]),Compare(left=Name(id=
+,ctx=Load()),ops=[
+],comparators=[UnaryOp(op=
+,operand=BinOp(left=Constant(value=
+,kind=None),op=
+,right=Constant(value=
+,kind=None)))])]),body=[Return(value=Constant(value=
+,kind=None))],orelse=[]),Return(value=Name(id=
+,ctx=Load()))],decorator_list=[],returns=None,type_comment=None)],decorator_list=[])],type_ignores=[])
+
+
+________________________________
+content_tokens_S4:
+Class_0
+object
+reverse
+self
+x
+reverse
+0
+var_0
+x
+Lt()
+0
+USub()
+1
+1
+x
+abs
+x
+x
+var_1
+x
+Mod()
+10
+reverse
+reverse
+Mult()
+10
+Add()
+var_1
+x
+Div()
+10
+var_2
+var_0
+Mult()
+reverse
+Or()
+var_2
+Gt()
+2
+Pow()
+31
+Sub()
+1
+var_2
+Lt()
+USub()
+2
+Pow()
+31
+0
+var_2
+
+
+________________________________
+integer sequence:
+[[2397, 112], [1814, 510], [1853, 529], [1282, 1936], [1283, 672], [1284, 529], [1406, 881], [1407, 570], [2446, 672], [1321, 19], [1409, 881], [11219, 34], [1325, 983], [5441, 983], [1401, 672], [1285, 342], [1286, 672], [4210, 672], [1302, 571], [1392, 672], [1310, 22], [1311, 993], [1401, 529], [2267, 529], [1310, 23], [1311, 993], [1992, 0], [1316, 571], [1785, 672], [1355, 8], [1307, 993], [1529, 582], [1392, 570], [1310, 23], [1316, 529], [2308, 27], [1486, 582], [1321, 11], [1791, 1110], [1431, 29], [1311, 1141], [1992, 32], [1311, 983], [5312, 582], [1321, 19], [2145, 34], [4722, 1110], [1431, 29], [1311, 1141], [67442, 881], [1520, 582], [51212, 86]]
+
+
+________________________________
+integer sequence:
+[[2397, 112], [1814, 510], [1853, 529], [1282, 1936], [1283, 672], [1284, 529], [1406, 881], [1407, 570], [2446, 672], [1321, 19], [1409, 881], [11219, 34], [1325, 983], [5441, 983], [1401, 672], [1285, 342], [1286, 672], [4210, 672], [1302, 571], [1392, 672], [1310, 22], [1311, 993], [1401, 529], [2267, 529], [1310, 23], [1311, 993], [1992, 0], [1316, 571], [1785, 672], [1355, 8], [1307, 993], [1529, 582], [1392, 570], [1310, 23], [1316, 529], [2308, 27], [1486, 582], [1321, 11], [1791, 1110], [1431, 29], [1311, 1141], [1992, 32], [1311, 983], [5312, 582], [1321, 19], [2145, 34], [4722, 1110], [1431, 29], [1311, 1141], [67442, 881], [1520, 582], [51212, 86]]
+
+
+________________________________
+Python code converted back:
+
+class Class_0(object):
+
+    def reverse(self, x):
+        reverse = 0
+        var_0 = ((- 1) if (x < 0) else 1)
+        x = abs(x)
+        while x:
+            var_1 = (x % 10)
+            reverse = ((reverse * 10) + var_1)
+            x /= 10
+        var_2 = (var_0 * reverse)
+        if ((var_2 > ((2 ** 31) - 1)) or (var_2 < (- (2 ** 31)))):
+            return 0
+        return var_2
+
+
+
+
+________________________________
+I/O python object:
+[1, 4, 'hello']
+
+
+________________________________
+IO data tokens:
+['Module(body=[Expr(value=List(elts=[Constant(value=', ',kind=None),Constant(value=', ',kind=None),Constant(value=', '<<||syntax_on_hold_for_content_token||>>', '<<||syntax_on_hold_for_content_token||>>', '<<||syntax_on_hold_for_content_token||>>', '<<||syntax_on_hold_for_content_token||>>', ',kind=None)],ctx=Load()))],type_ignores=[])']
+[1, 4, 'h', 'e', 'l', 'l', 'o']
+

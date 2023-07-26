@@ -1,0 +1,7 @@
+Niwel is a little golden bear. As everyone knows, bears live in forests, but Niwel got tired of seeing all the trees so he decided to move to the city.
+
+In the city, Niwel took on a job managing bears to deliver goods. The city that he lives in can be represented as a directed graph with n nodes and m edges. Each edge has a weight capacity. A delivery consists of a bear carrying weights with their bear hands on a simple path from node 1 to node n. The total weight that travels across a particular edge must not exceed the weight capacity of that edge.
+
+Niwel has exactly x bears. In the interest of fairness, no bear can rest, and the weight that each bear carries must be exactly the same. However, each bear may take different paths if they like.
+
+Niwel would like to determine, what is the maximum amount of weight he can deliver (it's the sum of weights carried by bears). Find the maximum weight.

@@ -1,0 +1,9 @@
+Vasya has a graph containing both directed (oriented) and undirected (non-oriented) edges. There can be multiple edges between a pair of vertices.
+
+Vasya has picked a vertex s from the graph. Now Vasya wants to create two separate plans:
+
+  to orient each undirected edge in one of two possible directions to maximize number of vertices reachable from vertex s;  to orient each undirected edge in one of two possible directions to minimize number of vertices reachable from vertex s. 
+
+In each of two plans each undirected edge must become directed. For an edge chosen directions can differ in two plans.
+
+Help Vasya find the plans.
