@@ -6,6 +6,8 @@ Code is comming soon.
 ![method](assets/teaser.png)
 
 
+
+
 # Usage
 
 
@@ -44,6 +46,7 @@ or other forms of the coding style significantly different, then you will need t
 
 `python train.py`
 
+The training/evaluation parameters are configured in 
 
 
 # 📋 Complete steps to reproduce results from scratch
