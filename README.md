@@ -1,3 +1,4 @@
+# 🔖 Overview
 This repository is the official implementation of "[Outline, Then Details: Syntactically Guided Coarse-To-Fine Code Generation](https://icml.cc/virtual/2023/poster/25091)", accepted in ICML 2023. This work aims to improve the code generation for competitive programming problems. To better leverage the domain knowledge of programming language, we tokenize the code _not_ based on its plain string representation, but rather based on the Abstract Syntax Tree (AST). Our tokenizer decouples the code into a _syntax_-only subcomponent ($S_3$ in the paper) and a _content_-only subcomponent ($S_4$). We also use a transformer architecture that take the natural language inputs, as well as the program input/output data aligned across multiple samples according to the syntax roles.
 
 
@@ -5,7 +6,7 @@ This repository is the official implementation of "[Outline, Then Details: Synta
 
 # ✅ Quick Start
 
-## How to only play with the proposed syntax-aware tokenizer _without loading the model_ (how to generate $S_3$/$S_4$ from code snippet):
+## How to only play with the proposed syntax-aware tokenizer _without loading the model_ (how to generate $S_3$ / $S_4$ from code snippet):
 Check out the model-independent demos in `quick_start_tokenizer.py`. The results of this file are printed in `quick_start_tokenizer_output.txt`.
 
 If you did not get the same results as `quick_start_tokenizer_output.txt` that we provided, it is possibly due to path issue: the folder `VOCAB_22E4` are not found by python in your system. You may need to change the first 5 lines of `tokenizer/tokenization_algorithm.py`, change to absolute path so as to read the `VOCAB_SO_FILE` correctly in that file.
@@ -39,7 +40,7 @@ The script to run the trianing code is `python train.py`. The training/evaluatio
 
 
 
-# A quick glance of the algorithm
+# 💡 A quick glance of the algorithm
 
 In this work, we propose to improve the generalization and performance for competitive programing synthesis, i.e., generating code for code challenge/competition style problems. We focus on generating the python language based solution. These problems specify inputs and outputs, which can be integers, strings, lists, floats, or bool values. We propose a novel tokenizer, together with a transformer architecture to achieve this goal. Our method is featured by:
 
@@ -95,7 +96,7 @@ This step will create a raw data folder, containing the string format code, the 
 
 
 
-# Requirements
+# 📑 Requirements
 Since our syntax tokenizer is deeply tied with the AST package (Abstract Syntax Tree), and the AST fundamental class might change name and/or arguments whenever there are python version updates, we have some loose requirements for the Python version. The python versions that have passed our tests include:
 
 python 3.8.13
