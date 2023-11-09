@@ -17,7 +17,7 @@ In `dataset_examples` folder, we provided a few example problems in the dataset 
 ## How to load pre-trained model and run inference:
 1. Download our pre-trained weights at [here](https://github.com/VITA-Group/ChainCoder/files/22169605/ckpt.zip).
 
-2. Download the processed [CodeContest](https://github.com/deepmind/code_contests) and [APPS](https://github.com/hendrycks/apps) datasets [here](https://github.com/VITA-Group/ChainCoder/files/22149285/datasets.zip). You can optionally generate them by running `create_data_step1_tokenize_vocab_and_raw.py`, `create_data_step2_regularize.py`, `create_data_step4_SG_to_pickle.py`. See details below.
+2. Download the processed CodeContest and APPS datasets [here](https://drive.google.com/file/d/1yOZXFmqTE_6ct2YLkHfRhVYAvAxZP88Y/view?usp=share_link). You can optionally generate them by running `create_data_step1_tokenize_vocab_and_raw.py`, `create_data_step2_regularize.py`, `create_data_step4_SG_to_pickle.py`. See details below.
 
 2. Clone the repo then enter the folder by `cd ChainCoder`.
 
